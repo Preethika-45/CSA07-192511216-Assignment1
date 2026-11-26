@@ -1,0 +1,4 @@
+Test,Command,Destination,Min RTT ms,Average RTT ms,Max RTT ms,Packet loss %,Observation
+Ping 20 packets,ping -n 20 <destination>,,,,,,
+Traceroute,tracert <destination>,,,,,,
+Wireshark,display filter: icmp or tcp,,,,,,

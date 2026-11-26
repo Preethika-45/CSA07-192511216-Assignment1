@@ -1,0 +1,8 @@
+Revised logical topology:
+- Fixed robots -> shielded wired access switches -> redundant 10 Gbps fibre core
+- CCTV cameras -> dedicated wired/fibre VLAN -> storage server
+- Offices/handhelds -> Wi-Fi 6 access points -> office VLAN
+- 50 AGVs -> private 5G gNBs with overlapping coverage -> redundant on-site 5G core/UPF
+- Sensors -> wired or 5G mMTC; slow low-rate sensors may use LoRaWAN
+- Core -> WAN edge routers with primary and diverse backup carrier paths
+Use Packet Tracer to represent the Ethernet/routing/VLAN portions. Document 5G as a logical design if the installed Packet Tracer version cannot model a private 5G core and URLLC behaviour.

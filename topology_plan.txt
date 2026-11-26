@@ -1,0 +1,14 @@
+Device placement plan:
+LEFT: Hub0, Hub1, Hub2, each with 8 PCs around it.
+CENTRE: 2960 24-port switch, connected to all three hubs.
+BELOW CENTRE: Router with G0/0 toward the 24-port switch and G0/1 toward Switch2.
+RIGHT: Switch2 with 12 IP phones connected to individual access ports.
+
+Link plan:
+Each PC -> its hub (copper straight-through)
+Each hub -> central switch (copper straight-through)
+Central switch -> Router G0/0
+Router G0/1 -> Switch2
+Each IP phone -> Switch2
+
+Use clear labels. Keep the three hub groups visually separate. Do not replace hubs with switches in the original topology.
